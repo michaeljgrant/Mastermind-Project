@@ -3,7 +3,7 @@ import random
 
 #Computer guess selects random number 4 digit number from 1000 to 10000
 computer_number = random.randrange(1000, 10000)
-print(computer_number)
+
 player_guess = int(input("Guess the 4 digit number:"))
 
 #Does the players guess equal the commputers choice? If not check how many numbers are correct.
