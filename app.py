@@ -2,8 +2,8 @@ import random
 
 
 #Computer guess selects random number 4 digit number from 1000 to 10000
-computer_number = random.randrange(1000, 9999)
-
+computer_number = random.randrange(1000, 10000)
+print(computer_number)
 player_guess = int(input("Guess the 4 digit number:"))
 
 #Does the players guess equal the commputers choice? If not check how many numbers are correct.
@@ -26,7 +26,7 @@ else:
 
 		#array store of correct digits
 		correct = ["X","X","X","X"]
-
+        
 		# loop over index
 		for i in range(0, 4):
 
@@ -50,7 +50,7 @@ else:
 		# when no numbers correct
 		elif (count == 0):
 			print("None of the numbers in your guess match.")
-			n = int(input("Enter your next choice of numbers: "))
+			player_guess = int(input("Enter your next choice of numbers: "))
 
 	# Win condition met
 	if player_guess == computer_number:
